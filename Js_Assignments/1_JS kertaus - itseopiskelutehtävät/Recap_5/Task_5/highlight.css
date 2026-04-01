@@ -1,0 +1,112 @@
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em;
+  width: 80%;
+}
+
+th {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
+.highlight {
+  background-color: #ffe082;
+  font-weight: bold;
+}
+
+tr {
+  cursor: pointer;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 400px;
+  width: 90%;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+article {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  margin-top: 0.7em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+article p {
+  margin: 0.2em 0;
+  font-size: 0.9em;
+}
+
+article p:first-child {
+  font-size: 1em;
+  color: #333;
+}
+
+article p:nth-child(2) {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+article p:nth-child(3) {
+  color: #555;
+  font-size: 0.85em;
+}
+
+dialog h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+dialog p {
+  margin: 0.3em 0;
+}
+
+dialog button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+dialog button:hover {
+  background: #e53935;
+}

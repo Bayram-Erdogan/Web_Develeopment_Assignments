@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <script src="task_4.js" defer></script>
+  </head>
+  <body>
+    <h1>Ajax</h1>
+    <p>
+      Generic Fetch Function. Create a reusable async function that abstracts
+      the Fetch API usage and handles errors.
+    </p>
+    <p>
+      Define an async function named fetchData that takes two parameters: url
+      and options.
+    </p>
+    <p>
+      Use the Fetch API with async/await to make a request to the specified url
+      with the provided options.
+    </p>
+    <p>
+      If the response is not successful (status code other than 2xx), throw an
+      error with an appropriate message.
+    </p>
+    <p>Return the response as a JSON promise if successful.</p>
+    <p>
+      When testing the function, call the fetchData function with the desired
+      URL and options.
+    </p>
+    <p>
+      Example: try { const user = { name: 'John Doe', job: 'Developer' }; const
+      url = 'https://reqres.in/api/users'; const options = { method: 'POST',
+      headers: { 'Content-Type': 'application/json' }, body:
+      JSON.stringify(user) }; const userData = await fetchData(url, options);
+      console.log(userData); } catch (error) { console.error('An error
+      occurred:', error); }
+    </p>
+    <p>Handle any errors using try/catch blocks to customize error handling.</p>
+  </body>
+</html>
